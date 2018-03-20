@@ -9,8 +9,8 @@ Please follow and complete the free online [Bash Scripting Tutorial](https://rya
 ### Q1.  Cheat Sheet of Commands  
 
 Here's a list of items with which you should be familiar:  
-* show current working directory path
-* creating a directory
+* show current working directory path 
+* creating a directory ``
 * deleting a directory
 * creating a file using `touch` command
 * deleting a file
@@ -20,7 +20,16 @@ Here's a list of items with which you should be familiar:
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do.  (Use the 8 items above and add a couple of your own.)  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+show current working directory path `pwd`
+creating a directory `mkdir <foldername>`
+deleting a directory `rmdir <foldername>`
+deleting a directory along with all files and directories within that directory, would be deleted with no prompt or message `rm -rf <foldername>`
+creating a file using touch command  `touch`
+deleting a file `rm <fileName>`
+renaming a file `mv file1 file2`
+listing hidden files `ls -ld .?* `
+copying a file from one directory to another `cp file1 folder1`
 
 ---
 
@@ -35,15 +44,33 @@ What do the following commands do:
 `ls -t`  
 `ls -Glp`  
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+`ls` Displays all of the files in the directory.
+`ls -a`  Displays all files.
+`ls -l`  Displays the long format listing.
 
+`ls -lh`  list long format with readable file size
+`ls -lah`  list long format with readable file size including hidden files
+`ls -t`  Displays newest files first. (based on timestamp)
+`ls -Glp`  Displays the long format listing, but exclude the owner name.
+Displays the long format listing.
+Displays directories with /
+
+
+source: https://www.techonthenet.com/unix/basic/ls.php
 ---
 
 ### Q3.  More List Files in Unix  
 
 Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) and pick 5 of your favorites:
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+`-p` Displays directories with /
+`-a` Displays all files.
+`-d` Displays only directories.
+`-m` Displays the names as a comma-separated list.
+`-r` Displays files in reverse order.
+
 
 ---
 
@@ -51,7 +78,11 @@ Explore these other [ls options](http://www.techonthenet.com/unix/basic/ls.php) 
 
 What does `xargs` do? Give an example of how to use it.
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > 
+The xargs command in UNIX is a command line utility for building an execution pipeline from standard input. Whilst tools like grep can accept standard input as a parameter, many other tools cannot. Using xargs allows tools like echo and rm and mkdir to accept standard input as arguments.
 
+`echo 'one two three' | xargs mkdir`
+`find /tmp -mtime +14 | xargs rm`
+source: https://shapeshed.com/unix-xargs/#what-is-the-xargs-command-in-unix
  
 
