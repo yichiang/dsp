@@ -97,7 +97,24 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> According to https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/readings/MIT18_05S14_Reading20.pdf
+
+Bayesian inference
+• uses probabilities for both hypotheses and data.
+• depends on the prior and likelihood of observed data.
+• requires one to know or construct a ‘subjective prior’.
+• dominated statistical practice before the 20th century.
+• may be computationally intensive due to integration over many parameters.
+Frequentist inference (NHST)
+• never uses or gives the probability of a hypothesis (no prior or posterior).
+• depends on the likelihood P(D | H)) for both observed and unobserved data.
+• does not require a prior.
+• dominated statistical practice during the 20th century.
+• tends to be less computationally intensive.
+
+Baed on this video - https://www.youtube.com/watch?v=r76oDIvwETI
+
+It provided two examples. With Bayesian inference, it will consider prior knowledge or history data.
 
 ---
 
